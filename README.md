@@ -1,6 +1,6 @@
 # Tailect-SKILL
 
-方言 ASR 训练数据构建与预处理 — VS Code Agent Skills 仓库。
+方言 ASR 训练数据构建、预处理和平台运维 — Agent Skills 仓库。
 
 ## 技能列表
 
@@ -8,6 +8,7 @@
 |-------|------|
 | [fangyan-asr-data-prep](./skills/fangyan-asr-data-prep/SKILL.md) | 方言语音识别(ASR)训练数据构建与预处理管线 |
 | [tv-script-dialect-extract](./skills/tv-script-dialect-extract/SKILL.md) | 电视台方言节目按台本提取主持人语音（演播室镜头锚点 + 强制对齐 + 切片 + 审阅页） |
+| [tailect-platform-ops](./skills/tailect-platform-ops/SKILL.md) | 方言采集与转译平台排障、版本核对及宝塔增量发布 |
 
 ## 安装
 
@@ -24,6 +25,11 @@
     {
       "name": "tv-script-dialect-extract",
       "description": "电视台方言节目按台本提取主持人语音",
+      "url": "https://github.com/Luwis-dh/Tailect-SKILL"
+    },
+    {
+      "name": "tailect-platform-ops",
+      "description": "方言采集与转译平台排障及增量发布",
       "url": "https://github.com/Luwis-dh/Tailect-SKILL"
     }
   ]
@@ -46,6 +52,9 @@ Tailect-SKILL/
     │       ├── 04-forced-aligner.md       # ForcedAligner 强制对齐
     │       ├── 05-text-and-manifest.md    # 文本标准化与 Manifest 生成
     │       └── 06-quality-split.md        # 去重、划分与质量控制
+    ├── tailect-platform-ops/
+    │   ├── SKILL.md
+    │   └── references/              # 排障与增量发布要点
     └── tv-script-dialect-extract/
         ├── SKILL.md
         ├── references/

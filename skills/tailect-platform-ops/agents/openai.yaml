@@ -1,0 +1,3 @@
+interface:
+  display_name: "方言平台排障与发布"
+  short_description: "Diagnose and release the Tailect platform"
