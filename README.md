@@ -9,8 +9,21 @@
 | [fangyan-asr-data-prep](./skills/fangyan-asr-data-prep/SKILL.md) | 方言语音识别(ASR)训练数据构建与预处理管线 |
 | [tv-script-dialect-extract](./skills/tv-script-dialect-extract/SKILL.md) | 电视台方言节目按台本提取主持人语音（演播室镜头锚点 + 强制对齐 + 切片 + 审阅页） |
 | [tailect-platform-ops](./skills/tailect-platform-ops/SKILL.md) | 方言采集与转译平台排障、版本核对及宝塔增量发布 |
+| [template-ppt-skill](./skills/template-ppt-skill/SKILL.md) | 基于 606 页青绿色模板库制作可编辑 PowerPoint |
 
 ## 安装
+
+克隆仓库后，将需要的 skill 文件夹复制到 Codex 的 skills 目录（macOS/Linux 通常为 `~/.codex/skills/`；Windows 按本机 Codex skills 目录配置）：
+
+```bash
+git clone https://github.com/Luwis-dh/Tailect-SKILL.git
+cp -R Tailect-SKILL/skills/template-ppt-skill ~/.codex/skills/
+```
+
+### 模板 PowerPoint skill 的额外配置
+
+`template-ppt-skill` 仓库内容包含索引、606 张缩略图和检索脚本，不包含约 260 MB 的原始 `ppt模版.pptx`。请在目标电脑单独存放模板，并设置 `TEMPLATE_PPTX` 指向它；也可在每次使用时提供模板路径。跨电脑复用前请比对模板 SHA-256；若版本不同，应重新生成索引和缩略图并核对页面编号。
+
 
 在 VS Code 的 `.vscode/agents.json` 或 `copilot-instructions.md` 中引用此仓库中的 skill：
 
@@ -55,6 +68,11 @@ Tailect-SKILL/
     ├── tailect-platform-ops/
     │   ├── SKILL.md
     │   └── references/              # 排障与增量发布要点
+    ├── template-ppt-skill/
+    │   ├── SKILL.md
+    │   ├── catalog/                 # 606 页索引与静态缩略图
+    │   ├── references/
+    │   └── scripts/
     └── tv-script-dialect-extract/
         ├── SKILL.md
         ├── references/
