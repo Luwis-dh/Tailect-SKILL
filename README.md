@@ -9,7 +9,7 @@
 | [fangyan-asr-data-prep](./skills/fangyan-asr-data-prep/SKILL.md) | 方言语音识别(ASR)训练数据构建与预处理管线 |
 | [tv-script-dialect-extract](./skills/tv-script-dialect-extract/SKILL.md) | 电视台方言节目按台本提取主持人语音（演播室镜头锚点 + 强制对齐 + 切片 + 审阅页） |
 | [tailect-platform-ops](./skills/tailect-platform-ops/SKILL.md) | 方言采集与转译平台排障、版本核对及宝塔增量发布 |
-| [template-ppt-skill](./skills/template-ppt-skill/SKILL.md) | 基于 606 页青绿色模板库制作可编辑 PowerPoint |
+| [template-ppt-skill](./skills/template-ppt-skill/SKILL.md) | 根据素材、指导书和模板直接制作并核验可编辑 PowerPoint |
 
 ## 安装
 
